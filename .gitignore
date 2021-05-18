@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,venv,python,windows,jupyternotebooks
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,venv,python,windows,jupyternotebooks
+# Created by https://www.toptal.com/developers/gitignore/api/virtualenv,venv,python,jupyternotebooks,macos,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=virtualenv,venv,python,jupyternotebooks,macos,windows
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
@@ -204,6 +204,10 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db:encryptable
@@ -229,4 +233,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,venv,python,windows,jupyternotebooks
+# End of https://www.toptal.com/developers/gitignore/api/virtualenv,venv,python,jupyternotebooks,macos,windows
