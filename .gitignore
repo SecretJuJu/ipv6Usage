@@ -234,3 +234,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/virtualenv,venv,python,jupyternotebooks,macos,windows
+
+
+# custom
+html2csv
