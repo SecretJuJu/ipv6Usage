@@ -15,6 +15,7 @@ elif platform.system() == 'Linux': #리눅스
 
 
 conveter = Converter()
+tableConverter = TableConverter()
 
 DATAFOLDER="./datas"
 HTMLFOLDER=DATAFOLDER+"/htmls"
@@ -48,7 +49,7 @@ def __main__():
     i = 0
     tables = []
     
-    tableConverter = TableConverter()
+    
     sort_key = "IPv6 Capable"
     for csv_name  in csvs:
         path = CSVFOLDER+"/"+csv_name
@@ -122,7 +123,7 @@ def __main__():
             i+=1
     y = np.arange(0,len(x))
     
-    plt.title("대륙 하위 지역별 Ipv6 활성화 수")
+    plt.title("대륙 하위 지역별 Ipv6 보급 개수")
     plt.grid(True)
     # plt.axis([0, len(x),-1,len(y)])
     plt.xticks(rotation=90)
@@ -137,12 +138,12 @@ def __main__():
     
     
     plt.subplot(2,1,1)
-    plt.title("IPv6 사용 가능 비율 비교 ( 한국 )")
+    plt.title("IPv6 도입률 비교 ( 한국 )")
     _, v = Korea["IPv6 Capable"].popitem()
     plt.pie([v,1-v], labels=labels, autopct='%.1f%%')
 
     plt.subplot(2,1,2)
-    plt.title("IPv6 사용 가능 비율 비교 ( 인도 )")
+    plt.title("IPv6 도입률 비교 ( 인도 )")
     _, v = India["IPv6 Capable"].popitem()
     plt.pie([v,1-v], labels=labels, autopct='%.1f%%')
     plt.show()
